@@ -25,6 +25,7 @@ body {
   align-items: center;
 }
 .nav__menu i {
+  cursor: pointer;
   margin: auto 20px;
   padding-right: 10px;
 }
@@ -38,5 +39,6 @@ body {
   align-items: center;
 }
 .nav__icons i {
+  cursor: pointer;
   margin: auto 10px;
 }
