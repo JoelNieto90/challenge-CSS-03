@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/*Paleta de colores*/
+$bg-color: #6200ee;
+
+/*font size, family y weight*/
+$font-size: 18px;
+$font-weight: 600px;
+$font-family: 'Inter', sans-serif;
+
+/*Mixins*/
+@mixin Screen_size($width) {
+    width: $width;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,11 +23,11 @@ body {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    min-width: 100%;
+    @include Screen_size(100%);
     color: white;
     /*Incluir Version Desktop*/
     @include media(mobile-only) {
-        width: 365px;
+        @include Screen_size(365px);
     }
     &__menu {
         display: flex;
