@@ -11,8 +11,14 @@ body {
   display: flex;
   justify-content: space-between;
   height: 60px;
-  width: 365px;
+  min-width: 100%;
   color: white;
+  /*Incluir Version Desktop*/
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 365px;
+  }
 }
 .nav__menu {
   display: flex;
