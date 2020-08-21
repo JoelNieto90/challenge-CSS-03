@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
 .nav {
     background-color: #6200ee;
     display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 360px;
+    color: white;
+    &__menu {
+        display: flex;
+        align-items: center;
+        i {
+            margin: auto 20px;
+            padding-right: 10px;
+        }
+        &__p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+    }
 }
