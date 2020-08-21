@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .nav {
     background-color: #6200ee;
     display: flex;
     justify-content: space-between;
     height: 60px;
-    width: 360px;
+    width: 365px;
     color: white;
     &__menu {
         display: flex;
@@ -18,10 +22,14 @@
         &__p {
             font-family: 'Inter', sans-serif;
             font-weight: 600;
+            font-size: 18px;
         }
     }
     &__icons {
         display: flex;
         align-items: center;
+        i {
+            margin: auto 10px;
+        }
     }
 }
